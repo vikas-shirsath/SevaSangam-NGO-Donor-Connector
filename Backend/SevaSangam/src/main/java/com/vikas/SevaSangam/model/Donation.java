@@ -17,14 +17,14 @@ public class Donation {
 
     @ManyToOne
     @JoinColumn(name = "requirement_id", nullable = false)
-    private NGORequirement requirement;
+    private int requirementId;
 
     @ManyToOne
     @JoinColumn(name = "donor_id", nullable = false)
     private Donor donor;
 
     @Column(name = "amount", nullable = false)
-    private double amount;
+    private int amount;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "donation_status", nullable = false)
