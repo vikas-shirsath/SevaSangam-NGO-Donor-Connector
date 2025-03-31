@@ -45,10 +45,6 @@ public class NGOUnauthorised {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @Lob
-    @Column(name = "logo", nullable = true)
-    private byte[] logo;
-
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 
